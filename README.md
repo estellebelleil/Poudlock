@@ -1,6 +1,6 @@
 # Bienvenue sur le projet Poudlock
 
-Ici vous trouverez le récapitulatif des fonctionnalités mises en place sur la page "POudlock". Il s'agit d'un exercice de création d'intéractivité avec JavaScript proposé par l'école O'Clock. Il s'agit de proposer une image différente à chaque clic en fonction de la valeur soumise par le formulaire proposé. 
+Ici vous trouverez le récapitulatif des fonctionnalités mises en place sur la page "Poudlock". Il s'agit d'un exercice de création d'interactivité avec JavaScript proposé par l'école O'Clock. Il s'agit de générer une image différente à chaque clic en fonction de la valeur soumise par le formulaire proposé à l'utilisateur.
 
 ### Fonctionnalités 
 
