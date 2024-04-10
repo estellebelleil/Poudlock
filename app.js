@@ -40,10 +40,7 @@ let app = {
             console.log("Ca ne fonctionne qu'avec un nom voyons!")
             return false;
         };
-
-
         //Après on va vouloir affciher différentes conditions pour attribuer des maisons/ toujours au submit
-
         //Ici si le nom contient 8 caractères, on affichera le blason Maxopus
 
         console.log(inputvalue.length)
@@ -59,6 +56,7 @@ let app = {
         //Sinon, si la première lettre du nom est un L ou la dernière un X, on affiche le blason de la maison Lustrix.
         /*const premierelettre = 0;
         const dernierelettre = -1;*/
+        //La fonction "charAt()" retourne le caractère situé à une position donnée dans une chaîne de caractères
         console.log(inputvalue.charAt(0))
 
         if (inputvalue.charAt(0) === 'L' || inputvalue.charAt((inputvalue.length -1)) === 'x' )
@@ -71,7 +69,8 @@ let app = {
         }
 
 
-        //Sinon, si le nombre de lettres du nom est un multiple de 5 ou un multiple de 3, on affiche le blason de la maison Anthorvus.//Modulo renvoie le RESTE de la division (ici par 5 ou 3) donc non.
+        //Sile nombre de lettres du nom est un multiple de 5 ou un multiple de 3, on affiche le blason de la maison Anthorvus.
+        //Modulo renvoie le RESTE de la division (ici par 5 ou 3) donc non.
         console.log (inputvalue.length % 5);
 
         if (inputvalue.length % 5 == 0 || inputvalue.length % 3 == 0)
