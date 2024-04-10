@@ -13,10 +13,9 @@ let app = {
         
         //Ici je viens récupérer tout mon formulaire
         const form = document.querySelector('form')
-        console.log(form)
+        //console.log(form)
 
         //j'ajoute mon écouteur d'évenement 
-
         form.addEventListener('submit', app.handlerposerchoixpo)
         
     },
@@ -26,12 +25,11 @@ let app = {
     {
         //ici j'empeche le rechargement automatique de ma page
         event.preventDefault();
-
         //ici je viens récupérer la class de mon input
         const input = document.querySelector(".name");
         //je créer au choix : une nouvelle variable contenant la valeur de l'input, ou je rajoute .value à ma const input après le .name).value;
         const inputvalue = input.value;
-        console.log (inputvalue)
+        //console.log (inputvalue)
 
         //On veut que si le formulaire est vide, on rajoute un text spécifiant qu'il est vide. Je crée donc ma condition: si le formulaire est vide, affiche ça
 
@@ -40,10 +38,10 @@ let app = {
             console.log("Ca ne fonctionne qu'avec un nom voyons!")
             return false;
         };
-        //Après on va vouloir affciher différentes conditions pour attribuer des maisons/ toujours au submit
+        
+        //Après on va vouloir afficher différentes conditions pour attribuer des maisons/ toujours au submit
         //Ici si le nom contient 8 caractères, on affichera le blason Maxopus
-
-        console.log(inputvalue.length)
+        //console.log(inputvalue.length)
         if (inputvalue.length === 8)
         {
             const divimgencart = document.querySelector('.speech')
@@ -57,7 +55,7 @@ let app = {
         /*const premierelettre = 0;
         const dernierelettre = -1;*/
         //La fonction "charAt()" retourne le caractère situé à une position donnée dans une chaîne de caractères
-        console.log(inputvalue.charAt(0))
+        //console.log(inputvalue.charAt(0))
 
         if (inputvalue.charAt(0) === 'L' || inputvalue.charAt((inputvalue.length -1)) === 'x' )
         {
@@ -69,9 +67,9 @@ let app = {
         }
 
 
-        //Sile nombre de lettres du nom est un multiple de 5 ou un multiple de 3, on affiche le blason de la maison Anthorvus.
+        //Si le nombre de lettres du nom est un multiple de 5 ou un multiple de 3, on affiche le blason de la maison Anthorvus.
         //Modulo renvoie le RESTE de la division (ici par 5 ou 3) donc non.
-        console.log (inputvalue.length % 5);
+        //console.log (inputvalue.length % 5);
 
         if (inputvalue.length % 5 == 0 || inputvalue.length % 3 == 0)
         {
